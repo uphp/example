@@ -1,0 +1,14 @@
+{
+    "name": "uphp/example",
+    "description": "App example for UPhp framework",
+    "authors": [ 
+        {
+            "name": "Diego Bentes",
+            "email": "diegopbentes@gmail.com"
+        }
+    ],    
+    "require": {
+         "php": ">=7.0.0",
+         "uphp/framework": "^0.0"
+    }
+ }
