@@ -9,6 +9,16 @@
     ],    
     "require": {
          "php": ">=7.0.0",
-         "uphp/framework": "^0.0"
+         "uphp/framework": "^0.0",
+        "uphp/action-controller": "^0.0.1",
+        "uphp/helpers": "^0.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "projectApp\\controllers\\": "app/projectApp/controllers/"
+        },
+        "files": [
+            "helpers/defineFunctions.php"
+        ]
     }
  }

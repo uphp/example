@@ -4,6 +4,7 @@
     $app = new \Uphp\web\Application();
     $app->start();
 
-    echo src\Inflection::pluralize("papel");
+    //echo src\Inflection::pluralize("papel");
 
-    echo 1/0;
+    $pessoa = new projectApp\controllers\PessoasController();
+    $pessoa->index();
