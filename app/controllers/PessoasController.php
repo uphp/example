@@ -1,5 +1,5 @@
 <?php
-namespace projectApp\controllers;
+namespace controllers;
 
 class PessoasController extends ApplicationController
 {
