@@ -9,14 +9,13 @@
     ],    
     "require": {
          "php": ">=7.0.0",
-         "uphp/framework": "^0.0",
-        "uphp/action-controller": "^0.0.1",
-        "uphp/helpers": "^0.0.2",
-        "uphp/routes": "^0.0.1"
+         "uphp/framework": ">0.0.0"
     },
     "autoload": {
         "psr-4": {
-            "controllers\\": "app/controllers/"
+            "controllers\\": "app/controllers/",
+            "models\\": "app/models/",
+            "helpers\\": "app/helpers/"
         }
     }
  }
