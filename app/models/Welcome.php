@@ -1,9 +1,9 @@
 <?php
 namespace models;
 
-use \UPhp\Model\ActiveRecord;
+use ActiveRecord\Model;
 
-class Welcome extends ActiveRecord
+class Welcome extends Model
 {
     //Definição das validações
     public $validate = [
