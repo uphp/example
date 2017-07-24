@@ -19,7 +19,7 @@ class WelcomeController extends ApplicationController
             //$cfg->set_default_connection('production');
         });*/
 
-        //Person::delete_all();
+        Person::delete_all();
         Payment::delete_all();
         Order::delete_all();
 
