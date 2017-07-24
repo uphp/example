@@ -13,5 +13,8 @@ class Person extends Model
     // must have a name and a state
     static $validates_presence_of = array(
         array('name'), array('state'));
+
+    static $enviroment = "production";
+    //static $db = "teste";
 }
 ?>

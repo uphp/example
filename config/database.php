@@ -36,7 +36,7 @@ return [
                 "port"     => "3306",
                 "user"     => "root",
                 "password" => "",
-                "dbname"   => "dbTeste"
+                "dbname"   => "dbteste"
             ],
 
             /**
@@ -57,7 +57,15 @@ return [
          * Define as conexões de desenvolvimento utilizadas pelo framework
          */
         "production" => [
-
+            "teste" => [
+                "driver"   => "mysql",
+                "type"     => "relational",
+                "server"   => "localhost",
+                "port"     => "3306",
+                "user"     => "root",
+                "password" => "",
+                "dbname"   => "teste"
+            ],
         ],
 
         /**
