@@ -1,9 +1,7 @@
 <?php
 namespace models;
 
-use ActiveRecord\Model;
-
-class Welcome extends Model
+class Welcome extends Application
 {
     //Definição das validações
     public $validate = [

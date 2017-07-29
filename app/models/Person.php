@@ -1,9 +1,7 @@
 <?php
 namespace models;
 
-use ActiveRecord\Model;
-
-class Person extends Model
+class Person extends Application
 {
     // a person can have many orders and payments
     static $has_many = array(

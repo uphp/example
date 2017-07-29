@@ -1,9 +1,7 @@
 <?php
 namespace models;
 
-use ActiveRecord\Model;
-
-class Payment extends Model
+class Payment extends Application
 {
 	// payment belongs to a person
 	static $belongs_to = array(

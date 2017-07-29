@@ -10,7 +10,7 @@ class WelcomeController extends ApplicationController
 {
     public function index()
     {
-        //$this->order = Order::first();
+        $this->order = Order::first();
         return view($this);
     }
     public function enderecos(){
