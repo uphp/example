@@ -9,6 +9,7 @@ namespace config\routes;
     put("/pesso", "pessoas#editar"),
     delete("/pessoa", "pessoas#excluir"),*/
 
-    get("/", "welcome#index")
+    get("/", "welcome#index"),
+    get("/enderecos", "welcome#enderecos")
 
 ]);

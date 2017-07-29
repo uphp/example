@@ -10,18 +10,18 @@ class WelcomeController extends ApplicationController
 {
     public function index()
     {
-        /*\ActiveRecord\Config::initialize(function($cfg)
-        {
-            //$cfg->set_model_directory(__DIR__ . '/models');
-            $cfg->set_connections(array('development' => 'mysql://root@127.0.0.1/dbteste'));
+        //$this->order = Order::first();
+        return view($this);
+    }
+    public function enderecos(){
+        return view($this);
+    }
+}
 
-            // you can change the default connection with the below
-            //$cfg->set_default_connection('production');
-        });*/
-
-        Person::delete_all();
-        Payment::delete_all();
-        Order::delete_all();
+        /*
+        //Person::delete_all();
+        //Payment::delete_all();
+        //Order::delete_all();
 
         // create some people
         $jax = new Person(array('name' => 'Jax', 'state' => 'CA'));
@@ -91,6 +91,4 @@ class WelcomeController extends ApplicationController
 
         //$this->welcome = Welcome::first();
         //$this->welcome = Welcome::create(["nome" => "Diego"]);
-        return view($this);
-    }
-}
+        */

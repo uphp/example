@@ -1,6 +1,7 @@
 <?php
 
 return [
+    "AppName" => "Example",
     "lang" => "PT-BR",
     //"template" => "ChainTemplate",
     //"charset" => "utf-8",

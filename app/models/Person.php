@@ -14,7 +14,11 @@ class Person extends Model
     static $validates_presence_of = array(
         array('name'), array('state'));
 
-    static $enviroment = "production";
+    //static $enviroment = "production";
     //static $db = "teste";
+
+    public function get_name(){
+        return $this->read_attribute('name') . " EXAMPLE";
+    }
 }
 ?>

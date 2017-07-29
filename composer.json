@@ -9,7 +9,8 @@
     ],    
     "require": {
          "php": ">=7.0.0",
-         "uphp/framework": ">0.0.0"
+         "uphp/framework": ">0.0.0",
+        "uphp/orm": "^0.0.1"
     },
     "autoload": {
         "psr-4": {

@@ -7,4 +7,5 @@ Inflection::irregular([
     /*
     "segmentacao" => "segmentacoes",
     */
+    "person" => "people"
 ]);
