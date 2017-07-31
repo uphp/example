@@ -8,9 +8,10 @@
         }
     ],    
     "require": {
-         "php": ">=7.0.0",
-         "uphp/framework": ">0.0.0",
-        "uphp/orm": "^0.0.1"
+        "php": ">=7.0.0",
+        "uphp/framework": ">0.0.0",
+        "uphp/orm": "^0.0.1",
+        "diegobentes/protagonist": "@dev"
     },
     "autoload": {
         "psr-4": {

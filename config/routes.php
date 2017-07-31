@@ -10,6 +10,6 @@ namespace config\routes;
     delete("/pessoa", "pessoas#excluir"),*/
 
     get("/", "welcome#index"),
-    get("/enderecos", "welcome#enderecos")
+    get("/testes", "welcome#testes")
 
 ]);

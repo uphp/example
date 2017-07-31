@@ -5,6 +5,7 @@ use models\Welcome;
 use models\Payment;
 use models\Order;
 use models\Person;
+use Protagonist\Models\Module;
 
 class WelcomeController extends ApplicationController
 {
@@ -13,7 +14,8 @@ class WelcomeController extends ApplicationController
         $this->order = Order::first();
         return view($this);
     }
-    public function enderecos(){
+    public function testes(){
+        $this->module = new Module();
         return view($this);
     }
 }

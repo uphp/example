@@ -7,6 +7,7 @@ rmdir /s /q c:\wamp64\www\UP\example\vendor\uphp\routes
 rmdir /s /q c:\wamp64\www\UP\example\vendor\uphp\action-view
 rmdir /s /q c:\wamp64\www\UP\example\vendor\uphp\languages
 rmdir /s /q c:\wamp64\www\UP\example\vendor\uphp\ORM
+rmdir /s /q c:\wamp64\www\UP\example\vendor\diegobentes\protagonist
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\action-controller c:\wamp64\www\UP\uphp\action-controller
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\exception c:\wamp64\www\UP\uphp\exception
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\framework c:\wamp64\www\UP\uphp\framework
@@ -16,3 +17,4 @@ mklink /d c:\wamp64\www\UP\example\vendor\uphp\routes c:\wamp64\www\UP\uphp\rout
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\action-view c:\wamp64\www\UP\uphp\action-view
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\languages c:\wamp64\www\UP\uphp\languages
 mklink /d c:\wamp64\www\UP\example\vendor\uphp\ORM c:\wamp64\www\UP\uphp\ORM
+mklink /d c:\wamp64\www\UP\example\vendor\diegobentes\protagonist c:\wamp64\www\UP\protagonist

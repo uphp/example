@@ -3,7 +3,7 @@
 function uphpVersion()
 {
     echo "UPhp Framework\n";
-    echo "Version: 0.1 BETA\n";
+    echo "Version: 0.0.1 ALPHA\n";
     echo "Page: uphp.io\n";
 }
 
@@ -39,6 +39,30 @@ if (! empty($argv[1])) {
                 echo $argv[2];
             }
             break;
+
+        case "module:init":
+
+            if (! empty($argv[2])) {
+
+                $infFile = "vendor/" . $argv[2] . "/m_inf.txt";
+                if (file_exists($infFile)) {
+                    //$information = file_get_contents($infFile);
+                    echo "\n";
+                    $execInit = readline(include($infFile));
+                    echo "\n";
+                    if ($execInit === "Y" || $execInit === "y") {
+                        require("vendor/" . $argv[2] . "/install/install.php");
+                    } else {
+                        echo "\n Canceled by user\n";
+                    }
+                } else {
+                    echo "\n It's not a module\n";
+                }
+
+            } else {
+                echo "\nPlease, you need inform the module name: uphp module:init [DEV_NAME]/[MODULE_NAME]\n";
+            }
+            break;
         
         default:
 
@@ -46,6 +70,8 @@ if (! empty($argv[1])) {
 
     }
 
-} //else {
-//    uphpVersion();
-//}
+} else {
+    echo "\n";
+    uphpVersion();
+    echo "\n\nHow to use: \n-v | --version (show uphp script version)  \ndb:dump (create db_dump.lock)\n";
+}
