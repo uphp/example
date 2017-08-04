@@ -36,7 +36,8 @@ return [
                 "port"     => "3306",
                 "user"     => "root",
                 "password" => "",
-                "dbname"   => "dbteste"
+                "dbname"   => "dbteste",
+                'charset'   => 'utf8mb4',
             ],
 
             /**
