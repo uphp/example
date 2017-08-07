@@ -1,4 +1,6 @@
 <?php
+require("vendor/autoload.php");
+
 
 function uphpVersion()
 {
@@ -43,22 +45,25 @@ if (! empty($argv[1])) {
         case "module:init":
 
             if (! empty($argv[2])) {
-
-                $infFile = "vendor/" . $argv[2] . "/m_inf.txt";
-                if (file_exists($infFile)) {
-                    //$information = file_get_contents($infFile);
-                    echo "\n";
-                    $execInit = readline(include($infFile));
-                    echo "\n";
-                    if ($execInit === "Y" || $execInit === "y") {
-                        require("vendor/" . $argv[2] . "/install/install.php");
+                if (is_dir("vendor/" . $argv[2] . "/module")) {
+                    $arrArgs = explode("/", $argv[2]);
+                    $dev = $arrArgs[0];
+                    $module = $arrArgs[1];
+                    $module = str_replace("-","_", $module);
+                    $moduleClass = \src\Inflection::classify($module);
+                    $classFile = "vendor/" . $argv[2] . "/module/" . $moduleClass . ".php";
+                    if (file_exists($classFile)) {
+                        require $classFile;
+                        $instance = new $moduleClass;
+                        echo $instance->description();
+                        $response = $instance->getResponseAfterDescription ? rtrim(fgets(STDIN)) : null;
+                        $instance->start($response);
                     } else {
-                        echo "\n Canceled by user\n";
+                        echo "\n Class $moduleClass not found\n";
                     }
                 } else {
                     echo "\n It's not a module\n";
                 }
-
             } else {
                 echo "\nPlease, you need inform the module name: uphp module:init [DEV_NAME]/[MODULE_NAME]\n";
             }

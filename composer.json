@@ -9,8 +9,8 @@
     ],    
     "require": {
         "php": ">=7.0.0",
-        "uphp/framework": ">0.0.0",
-        "uphp/orm": "^0.0.1",
+        "uphp/framework": "@dev",
+        "uphp/orm": "@dev",
         "diegobentes/protagonist": "@dev"
     },
     "autoload": {
@@ -19,5 +19,6 @@
             "models\\": "app/models/",
             "helpers\\": "app/helpers/"
         }
-    }
+    },
+    "minimum-stability": "dev"
  }
