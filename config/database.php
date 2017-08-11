@@ -67,6 +67,16 @@ return [
                 "password" => "",
                 "dbname"   => "teste"
             ],
+            "mysql" => [
+                "driver"   => "mysql",
+                "type"     => "relational",
+                "server"   => "192.168.02.1",
+                "port"     => "3306",
+                "user"     => "root",
+                "password" => "",
+                "dbname"   => "dbteste",
+                'charset'   => 'utf8mb4',
+            ],
         ],
 
         /**

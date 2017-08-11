@@ -12,6 +12,10 @@ class WelcomeController extends ApplicationController
     public function index()
     {
         $this->order = Order::first();
+        $test = \UPhp::app()->db()->executeSQL('SELECT * FROM orders WHERE item_name=?', ['Live Pokemon'])->fetchAll();
+        //$test = \UPhp::app()->db()->executeSQL(file_get_contents("protagonist.sql"));
+
+        var_dump($test);
         return view($this);
     }
     public function testes(){
